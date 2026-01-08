@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
   let [count, setCount] = useState(0)
@@ -21,9 +22,11 @@ function App() {
     }  
   return (
     <>
-         <div>Count is: {count}</div>
+         {/* <div>Count is: {count}</div>
          <button onClick={incCount}>inc count</button>
-         <button onClick={decCount}>dec count</button>
+         <button onClick={decCount}>dec count</button> */}
+         <Card age={21} name="Kartik" title="developer" arr={[1,2,3]}/>
+         <Card age={22} name="Kartik Tomar" title="SDE" arr={[4,5,6]}/>
     </>
   )
 }

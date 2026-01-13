@@ -31,13 +31,13 @@ const PasswordGenerator = () => {
 
     let passRef= useRef()
 
-    function copyPassword()
+    let copyPassword=useCallback(function()
     {     
-        passRef.current.focus();
-          console.log("password to copy is: ", passRef.current.value);
-
+        passRef.current.select();
+          console.log("password to copy is: ", password);
+        window.navigator.clipboard.writeText(password)
           
-    }
+    },[password])
     
     useEffect(() => {
          generatePassword();

@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './components/Card'
 import BgChanger from './components/BgChanger'
+import PasswordGenerator from './components/PasswordGenerator'
 
 function App() {
   let [count, setCount] = useState(0)
@@ -28,7 +29,8 @@ function App() {
          <button onClick={decCount}>dec count</button> */}
          {/* <Card age={21} name="Kartik" title="developer" arr={[1,2,3]}/>
          <Card age={22} name="Kartik Tomar" title="SDE" arr={[4,5,6]}/> */}
-         <BgChanger/>
+         {/* <BgChanger/> */}
+         <PasswordGenerator/>
     </>
   )
 }

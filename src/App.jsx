@@ -6,6 +6,7 @@ import Card from './components/Card'
 import BgChanger from './components/BgChanger'
 import PasswordGenerator from './components/PasswordGenerator'
 import UseCallbackHook from './components/UseCallbackHook'
+import Todos from './components/Todos'
 
 function App() {
   let [count, setCount] = useState(0)
@@ -32,7 +33,8 @@ function App() {
          <Card age={22} name="Kartik Tomar" title="SDE" arr={[4,5,6]}/> */}
          {/* <BgChanger/> */}
          {/* <PasswordGenerator/> */}
-         <UseCallbackHook/>
+         {/* <UseCallbackHook/> */}
+         <Todos/>
     </>
   )
 }

@@ -7,6 +7,7 @@ import BgChanger from './components/BgChanger'
 import PasswordGenerator from './components/PasswordGenerator'
 import UseCallbackHook from './components/UseCallbackHook'
 import Todos from './components/Todos'
+import Currency from './components/currencyProject/Currency'
 
 function App() {
   let [count, setCount] = useState(0)
@@ -34,7 +35,8 @@ function App() {
          {/* <BgChanger/> */}
          {/* <PasswordGenerator/> */}
          {/* <UseCallbackHook/> */}
-         <Todos/>
+         {/* <Todos/> */}
+         <Currency/>
     </>
   )
 }

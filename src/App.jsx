@@ -10,6 +10,7 @@ import Todos from './components/Todos'
 import Currency from './components/currencyProject/Currency'
 import AllRoutes from './components/router/AllRoutes'
 import StopWatch from './components/StopWatch'
+import Calculator from './components/Calculator'
 
 function App() {
   let [count, setCount] = useState(0)
@@ -40,7 +41,9 @@ function App() {
          {/* <Todos/> */}
          {/* <Currency/> */}
          {/* <AllRoutes/> */}
-         <StopWatch/>
+         {/* <StopWatch/> */}
+
+         <Calculator/>
     </>
   )
 }

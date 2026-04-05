@@ -11,7 +11,9 @@ import Currency from './components/currencyProject/Currency'
 import AllRoutes from './components/router/AllRoutes'
 import StopWatch from './components/StopWatch'
 import Calculator from './components/Calculator'
-
+import UserContextProvider from './components/context/UserContextProvider'
+import Login from './components/context/Login'
+import UserProfile from "./components/context/UserProfile"
 function App() {
   let [count, setCount] = useState(0)
   
@@ -42,8 +44,13 @@ function App() {
          {/* <Currency/> */}
          {/* <AllRoutes/> */}
          {/* <StopWatch/> */}
-
-         <Calculator/>
+         {/* <Calculator/> */}
+         
+         {/* First context project */}
+         <UserContextProvider>
+               <Login/>
+               <UserProfile/>
+         </UserContextProvider>
     </>
   )
 }
